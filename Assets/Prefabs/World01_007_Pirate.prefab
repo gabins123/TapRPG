@@ -21,6 +21,8 @@ GameObject:
   - component: {fileID: 4844968784617680}
   - component: {fileID: 212100468292733336}
   - component: {fileID: 114338179251158394}
+  - component: {fileID: 95602181632316858}
+  - component: {fileID: 114623400039170790}
   m_Layer: 0
   m_Name: World01_007_Pirate
   m_TagString: Untagged
@@ -41,6 +43,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95602181632316858
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1454673601765392}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aab3cf477a034be4797a4c92ac74c47f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114338179251158394
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,7 +72,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3dc788b1f65ef74a8906ac120e39a76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MauQuai: 10
+  m_MaxHealth: 0
+  m_CurrentHealth: 0
+  m_HealthBar: {fileID: 0}
+--- !u!114 &114623400039170790
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1454673601765392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520f9be069069fd4d966b2fbec03652e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Damaged: {fileID: 0}
+  gameController: {fileID: 0}
 --- !u!212 &212100468292733336
 SpriteRenderer:
   m_ObjectHideFlags: 1
