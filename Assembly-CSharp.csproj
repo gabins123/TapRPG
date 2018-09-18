@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CHANGSTATE.cs" />
     <Compile Include="Assets\Damaged.cs" />
     <Compile Include="Assets\Script\s_Danh.cs" />
     <Compile Include="Assets\Script\s_QuaiAnimation.cs" />

@@ -4,13 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class s_ThuocTinhQuai : MonoBehaviour {
-    public int m_MaxHealth;
-    public int m_CurrentHealth;
+    public float m_MaxHealth;
+    public float m_CurrentHealth;
     public Slider m_HealthBar;
+    public float m_TienRot;
     void Awake()
     {
-        m_CurrentHealth = m_MaxHealth;
         m_HealthBar.value = 1f;
+
     }
     // Use this for initialization
     void Start () {
@@ -19,6 +20,6 @@ public class s_ThuocTinhQuai : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+
+    }
 }
